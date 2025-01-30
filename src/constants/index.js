@@ -1,0 +1,62 @@
+import project1 from "../assets/projects/project-1.webp";
+import project2 from "../assets/projects/project-2.webp";
+import project3 from "../assets/projects/project-3.webp";
+import project4 from "../assets/projects/project-4.webp";
+
+import pro1 from '../assets/readygo.png'
+import pro2 from '../assets/scipy.png'
+import pro3 from '../assets/kisan.png'
+import pro4 from '../assets/port.png'
+import pro5 from '../assets/mern.png'
+
+export const HERO_CONTENT = `I am an aspiring MERN stack developer with a focus on creating scalable and user-friendly web applications. I have hands-on experience with React.js for building interactive front-end interfaces, Express.js for developing robust back-end APIs, and MySQL and MongoDB for efficient database management.`
+
+
+export const ABOUT_TEXT = `Though I’m early in my career, I am committed to growing my skills and applying my knowledge to develop innovative solutions that enhance user experiences and contribute to business success. I am excited to collaborate on impactful projects and further my expertise in the MERN stack.`;
+
+
+
+export const PROJECTS1 = [
+  {
+    id: 1,
+    title: "Portfolio",
+    image: pro4,
+    description:
+      "A personal portfolio website showcasing my skills, experience, and projects in web development and design. It includes an interactive project gallery, details about my expertise in MERN stack and other technologies, and a contact section for collaboration or inquiries.",
+    technologies: ["React.js", " / TailwindCSS", " / CSS"," / Framer-Motion"],
+    gitLink : "iki"
+  },
+  {
+    id: 2,
+    title: "MERN Authentication",
+    image: pro5,
+    description:
+      "A secure and scalable authentication system built with the MERN stack, featuring user registration, login, and password management. It includes functionalities like email verification, OTP-based authentication, password reset, and JWT-based session handling for enhanced security.",
+    technologies: ["MERN STACK", " / TailwindCSS"],
+    gitLink : "iki"
+  },
+  {
+    id: 3,
+    title: "Billing System",
+    image: pro2,
+    description:
+    "A billing system designed to simplify the billing process for businesses. It offers an intuitive interface for managing items, calculating totals, and generating invoices efficiently, ensuring accuracy and ease of use.",
+    technologies: ["Python", " / TKinter", " / SQLite"],
+    gitLink : "https://github.com/Chitraksh09error/Scipy_Dmart"
+  },
+  {
+    id: 4,
+    title: "KISAN",
+    image: pro3,
+    description:
+    "This website helps farmers grow crops based on their needs, offering tailored recommendations to boost productivity. It was developed during the SMACKATHON at YCCE College as part of TechFest.",
+    technologies: ["Python", " / HTML", " / Bootstrap"," / JavaScript"," / CSS"],
+  }
+];
+
+
+export const CONTACT = {
+  address: "767 Fifth Avenue, New York, NY 10153 ",
+  phoneNo: "+12 4555 666 00 ",
+  email: "me@example.com",
+};
