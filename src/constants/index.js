@@ -3,11 +3,12 @@ import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
-import pro1 from '../assets/readygo.png'
 import pro2 from '../assets/scipy.png'
 import pro3 from '../assets/kisan.png'
 import pro4 from '../assets/port.png'
 import pro5 from '../assets/mern.png'
+import pro6 from '../assets/airkicks.png'
+import pro7 from '../assets/yash2k25.png'
 
 export const HERO_CONTENT = `I am an aspiring MERN stack developer with a focus on creating scalable and user-friendly web applications. I have hands-on experience with React.js for building interactive front-end interfaces, Express.js for developing robust back-end APIs, and MySQL and MongoDB for efficient database management.`
 
@@ -19,6 +20,24 @@ export const ABOUT_TEXT = `Though I’m early in my career, I am committed to gr
 export const PROJECTS1 = [
   {
     id: 1,
+    title: "AirKicks",
+    image: pro6,
+    description:
+      "A modern MERN stack e-commerce platform offering the latest Air Jordans and a curated selection of pre-owned sneakers. It features a seamless shopping experience, secure authentication, and a dynamic product gallery",
+    technologies: ["Next.js", " / TailwindCSS", " / Shadcnui"," / Magic UI"," / Aceternity UI" ," / Supabase"," / Framer-Motion"],
+    gitLink : "iki"
+  },
+  {
+    id: 2,
+    title: "YASH 25.0",
+    image: pro7,
+    description:
+      "A group project providing event details, schedules, and organizer contacts for YASH 25.0. Designed for easy navigation, real-time updates, and seamless event coordination.",
+    technologies: ["React.js", " / TailwindCSS", " / Framer-Motion"," / CSS"],
+    gitLink : "iki"
+  },
+  {
+    id: 3,
     title: "Portfolio",
     image: pro4,
     description:
@@ -27,7 +46,7 @@ export const PROJECTS1 = [
     gitLink : "iki"
   },
   {
-    id: 2,
+    id: 4,
     title: "MERN Authentication",
     image: pro5,
     description:
@@ -36,7 +55,7 @@ export const PROJECTS1 = [
     gitLink : "iki"
   },
   {
-    id: 3,
+    id: 5,
     title: "Billing System",
     image: pro2,
     description:
@@ -45,7 +64,7 @@ export const PROJECTS1 = [
     gitLink : "https://github.com/Chitraksh09error/Scipy_Dmart"
   },
   {
-    id: 4,
+    id: 6,
     title: "KISAN",
     image: pro3,
     description:

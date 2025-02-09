@@ -1,6 +1,7 @@
 import React from 'react'
 import { RiReactjsLine, RiNodejsLine } from 'react-icons/ri'
 import { SiMongodb, SiExpress } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 import Marquee from 'react-fast-marquee'
 import python from '../assets/python.png'
 import java from '../assets/java.png'
@@ -12,6 +13,9 @@ import c from '../assets/C.png'
 import boot from '../assets/Boot.png'
 import tail from '../assets/Tail.png'
 import canva from '../assets/Canva.png'
+import shad from '../assets/shadcn.png'
+import magic from '../assets/magic.png'
+import ace from '../assets/aceui.png'
 import { motion } from 'framer-motion';
 
 
@@ -41,6 +45,10 @@ function Skills() {
                             <img className="lg:w-7  w-5 mr-3" src={python} alt="python" />
                             Python
                         </div>
+                        <div className="rounded-3xl bg-zinc-900 text-sm lg:text-base flex space-x-5 justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
+                            <img className="lg:w-7  w-5 mr-3" src={shad} alt="shad" />
+                            Shadcn/ui
+                        </div>
 
                         <div className="rounded-3xl bg-zinc-900 text-sm lg:text-base flex space-x-5 justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
                             <img className="lg:w-8  w-5 mr-3" src={sql} alt="sql" />
@@ -56,6 +64,10 @@ function Skills() {
                             <img className="lg:w-7  w-5 mr-3" src={c} alt="c" />
                             C
                         </div>
+                        <div className="rounded-3xl bg-zinc-900 text-sm lg:text-base flex space-x-5 justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
+                            <img className="lg:w-7  w-5 mr-3" src={ace} alt="ace" />
+                            Aceternity UI
+                        </div>
 
                         <div className="rounded-3xl bg-zinc-900 text-sm lg:text-base flex space-x-5 justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
                             <img className="lg:w-7  w-5 mr-3" src={tail} alt="tail" />
@@ -70,11 +82,16 @@ function Skills() {
                         <div className="rounded-3xl bg-zinc-900 flex space-x-5 text-sm lg:text-base justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
                             <SiMongodb className='lg:text-4xl text-2xl text-green-400  mr-3' />MongoDB
                         </div>
-
+                        <div className="rounded-3xl bg-zinc-900 flex space-x-5 text-sm lg:text-base justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
+                            <RiNextjsFill className='lg:text-4xl text-2xl text-white   mr-3' />Next.js
+                        </div>    
                         <div className="rounded-3xl bg-zinc-900  flex space-x-5 text-sm lg:text-base justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
                             <SiExpress className='lg:text-4xl text-2xl text-cyan-400 mr-3 ' />Express
                         </div>
-
+                        <div className="rounded-3xl bg-zinc-900 text-sm lg:text-base flex space-x-5 justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
+                            <img className="lg:w-7  w-5 mr-3" src={magic} alt="shad" />
+                            Magic UI
+                        </div>
                         <div className="rounded-3xl bg-zinc-900  flex space-x-5 text-sm lg:text-base justify-center items-center lg:h-12 h-9 px-4 lg:mr-5 mr-2">
                             <img className='lg:w-8  w-5 mr-3 ' src={java} alt="java--v1" />Java
                         </div>
