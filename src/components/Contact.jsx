@@ -98,7 +98,7 @@ function Contact() {
                   </a>
                 </div>
                 <div className='border-solid border-2  rounded-xl border-white flex justify-center items-center lg:h-10 lg:w-10 h-8 w-8 hover:bg-[#0077B5] hover:border-[#0077B5]'>
-                  <a href="https://www.linkedin.com/in/chitraksh-chavan-937771254">
+                  <a href="https://www.linkedin.com/in/chitraksh-chavan">
                     <FiLinkedin className='lg:text-2xl  text-lg text-white cursor-pointer ' />
                   </a>
                 </div>
