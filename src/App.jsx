@@ -18,7 +18,7 @@ export default function App() {
       </div> */}
 
         <Navbar/>
-      <div className='container mx-auto px-5 sm:px-10 md:px-1 lg:px-20 xl:px-64'>
+      <div className='container mx-auto px-5 sm:px-10 md:px-1 lg:px-20 xl:px-20'>
         <Herosection/>
         <Skills/>
         <Education/>
