@@ -31,9 +31,9 @@ function Herosection() {
     return (
         <div className=' lg:mt-16 mt-24 ' id='hero'>
             <div className='flex flex-wrap lg:flex-row-reverse'>
-                <div className='flex justify-center items-center w-full lg:w-1/2 '>
+                <div className='flex justify-end items-center w-full lg:w-1/2 '>
                     <div className='flex justify-center   '>
-                        <motion.img className='gsap_pp w-80 border  border-stone-900 rounded-3xl' src={pp} 
+                        <motion.img className='gsap_pp w-96 border  border-stone-900 rounded-3xl' src={pp} 
                         initial={{x:100 , opacity : 0}}
                         whileInView ={{x:0 , opacity : 1}}
                         transition={ {duration : 1, delay : 0.5}} />
