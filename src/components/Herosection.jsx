@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import pp from "../assets/chitrakshchavanpp.jpeg"
+import pp from "../assets/chitraksh_chavan.jpg"
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { ABOUT_TEXT, HERO_CONTENT } from '../constants'
 import { delay, motion } from 'framer-motion'
