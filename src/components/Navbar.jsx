@@ -86,9 +86,15 @@ export default function Navbar({ mode, setMode }) {
               </div>
             </div>
 
-            <div className={`flex gap-4 items-center  ${mode == "dark" ? "text-gray-400/100 " : "text-gray-600/90 "}      `}>
+            <div className={`flex gap-2 items-center  ${mode == "dark" ? "text-gray-400/100 " : "text-gray-600/90 "}      `}>
+              <div className='p-2'>
               < RiGithubLine className='text-xl   cursor-pointer' />
-              <RiDiscordLine className='text-xl   cursor-pointer' />
+
+              </div>
+              <div className='p-2'>
+              <RiDiscordLine className='text-xl   cursor-pointer' />  
+
+              </div>
               <div onClick={changeMode} className={`text-center cursor-pointer p-2 rounded-lg bg-transparent ${mode == "dark" ? " text-gray-400/100   hover:bg-gray-600/40  " : " text-gray-600/90 hover:bg-gray-200/100"} transition-all `}>
                 {mode == "dark" ? <MdOutlineLightMode className='text-xl ' onClick={() => setMode("light")} /> : <MdOutlineDarkMode className='text-xl  cursor-pointer' onClick={() => setMode("dark")} />}
               </div>
