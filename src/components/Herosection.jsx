@@ -16,7 +16,7 @@ const childVariants = {
 
 
 
-function Herosection() {
+function Herosection({mode, setMode}) {
 
     const [text] = useTypewriter({
         words: ['MERN Developer', 'Frontend Dev'],
@@ -30,28 +30,19 @@ function Herosection() {
    
     return (
         <div className=' lg:mt-16 mt-24 ' id='hero'>
-            <div className='flex flex-wrap lg:flex-row-reverse'>
-                <div className='flex justify-end items-center w-full lg:w-1/2 '>
-                    <div className='flex justify-center   '>
-                        <motion.img className='gsap_pp w-96 border  border-stone-900 rounded-3xl' src={pp} 
-                        initial={{x:100 , opacity : 0}}
-                        whileInView ={{x:0 , opacity : 1}}
-                        transition={ {duration : 1, delay : 0.5}} />
-                    </div>
-
-                </div>
+            <div className='flex flex-wrap '>
 
                 <motion.div  
                 initial={{x:-100 , opacity : 0}}
                 whileInView ={{x:0 , opacity : 1}}
                 transition={ {duration : 1, delay : 0.5}}
-                className='w-full lg:w-1/2'>
-                    <div className='flex flex-col items-center lg:items-start mt-10 '>
-                        <motion.h2 variants={childVariants}  className='pb-2 text-4xl tracking-tighter lg:text-6xl text-cyan-400 font-till'>
-                            Hi, I am
-                        </motion.h2>
-                        <motion.h2 variants={childVariants} className='pb-2 text-3xl tracking-tighter lg:text-6xl font-til font-medium text-white'>
+                className='w-full '>
+                    <div className='flex flex-col items-center lg:items-start mt-20 '>
+                        <motion.h2 variants={childVariants}  className={`pb-2  lg:text-6xl text-4xl ${mode == "dark" ? "text-white":"text-black"} font-medium`}>
                             Chitraksh Chavan
+                        </motion.h2>
+                        <motion.h2 variants={childVariants} className=' lg:text-5xl text-4xl font-til font-medium text-gray-400/80'>
+                            Code, creativity, and coffee, that’s my daily stack
                         </motion.h2>
                         <motion.span variants={childVariants} className='lg:text-3xl text-xl tracking-tight py-5'>
                             I'm a {' '}

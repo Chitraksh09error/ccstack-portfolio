@@ -21,7 +21,7 @@ import { motion } from 'framer-motion';
 
 function Skills() {
     return (
-        <div className='lg:mb-20  mb-10 pt-2' id='skills'>
+        <div className='lg:mb-20 mt-44 mb-10 pt-2' id='skills'>
             <h2 className='  text-center lg:text-3xl text-xl  underline decoration-wavy decoration-2  decoration-cyan-400 mb-8 text-white font-ti underline-offset-8 font-semibold'>Skills</h2>
             <motion.div 
             initial={{y:100 , opacity : 0}}
