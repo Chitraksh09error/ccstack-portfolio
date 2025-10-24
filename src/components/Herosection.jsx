@@ -51,7 +51,7 @@ function Herosection({ mode, setMode }) {
                     <div className='mt-4 flex items-center justify-between'>
 
 
-                        <a href="/chitraksh.pdf" rel='noopener noreferrer' className={`border-solid flex items-center  border-[1px] rounded-lg py-3 px-5 lg:text-sm text-xs gap-2 text-white  ${mode == "dark" ? "bg-zinc-800 hover:bg-zinc-700 transtion-colors duration-200  border-zinc-500" : "text-black border-gray-800 "} font-tit font-medium `}>
+                        <a href="/chitraksh.pdf" rel='noopener noreferrer' className={`border-solid flex items-center  border-[1px] rounded-lg py-3 px-5 lg:text-sm text-xs gap-2  ${mode == "dark" ? "bg-zinc-800 text-white hover:bg-zinc-700 transtion-colors duration-200  border-zinc-500" : "text-black border-gray-800 "} font-tit font-medium `}>
                             <h1>Download Resume</h1>
                             <GoDownload className='text-lg' />
                         </a>
