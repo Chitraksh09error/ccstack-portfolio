@@ -19,7 +19,7 @@ function Herosection({ mode, setMode }) {
 
 
     return (
-        <div className=' lg:mt-16 mt-24 ' id='hero'>
+        <div className=' lg:mt-16 mt-10 ' id='hero'>
             <div className='flex flex-wrap '>
                 <div
                     initial={{ x: -100, opacity: 0 }}

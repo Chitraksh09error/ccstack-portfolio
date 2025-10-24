@@ -50,7 +50,7 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
               <h1 className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl`}>chitraksh.dev</h1>
             </div>
 
-            <div className="flex items-center justify-between py-4  lg:px-24">
+            <div className="flex items-center justify-between lg:py-4 py-2 lg:px-24">
 
               {/* Desktop Menu */}
               <div className={`hidden md:flex items-center  font-medium ${mode == "dark" ? "text-gray-400/100" : "text-gray-500"}  transition-all duration-300 text-sm `}>
@@ -112,10 +112,14 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
             leaveFrom="opacity-100 translate-y-0 max-h-96"
             leaveTo="opacity-100 -translate-y-4 max-h-0"
           >
-            <Disclosure.Panel className="md:hidden bg-[#040404] overflow-hidden  z-50 border-b-[1px] border-b-zinc-600/50 rounded-b-xl  ro">
+            <Disclosure.Panel className="md:hidden bg-[#040404] overflow-hidden  z-50 border-b-[1px] border-b-zinc-600/50 rounded-b-xl ">
               <div className="space-y-1 px-4 pb-4 ">
+                <div className=''>
 
                 <h1 className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl`}>chitraksh.dev</h1>
+                </div>
+                <div className=' p-3'>
+
 
                 {links.map(link => (
                   <Link
@@ -124,12 +128,13 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
                     smooth={true}
                     duration={500}
                     offset={-100}
-                    className="block text-base font-medium text-cyan-400 hover:text-white"
+                    className={`block text-sm font-normal border px-5 py-2 font-tit mb-1 rounded-sm ${mode == "dark" ? "bg-[#050505] text-white hover:bg-zinc-700/20 border-zinc-900/80 hover:border-zinc-500/20":""}  transition-colors duration-300 cursor-pointer`}
                     onClick={() => setMenuOpen(false)} // close menu on select
                   >
-                    {link.label.toUpperCase()}
+                    {link.label}
                   </Link>
                 ))}
+                </div>
               </div>
             </Disclosure.Panel>
           </Transition>
