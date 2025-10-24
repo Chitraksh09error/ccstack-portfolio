@@ -1,22 +1,12 @@
 import React, { useEffect } from 'react'
-import pp from "../assets/chitraksh_chavan.jpg"
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { ABOUT_TEXT, HERO_CONTENT } from '../constants'
-import { delay, motion } from 'framer-motion'
-
-
-const childVariants = {
-    hidden : {
-        opacity : 0 , x : -100
-    },
-    visible : {
-        opacity : 1, x:0, transition:{duration : 0.5 , delay : 1}
-    }
-}
+import { GoDownload } from "react-icons/go";
+import { FaLink } from "react-icons/fa6";
 
 
 
-function Herosection({mode, setMode}) {
+function Herosection({ mode, setMode }) {
 
     const [text] = useTypewriter({
         words: ['MERN Developer', 'Frontend Dev'],
@@ -27,40 +17,53 @@ function Herosection({mode, setMode}) {
     })
 
 
-   
+
     return (
         <div className=' lg:mt-16 mt-24 ' id='hero'>
             <div className='flex flex-wrap '>
-
-                <motion.div  
-                initial={{x:-100 , opacity : 0}}
-                whileInView ={{x:0 , opacity : 1}}
-                transition={ {duration : 1, delay : 0.5}}
-                className='w-full '>
+                <div
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className='w-full '>
                     <div className='flex flex-col items-center lg:items-start mt-20 '>
-                        <motion.h2 variants={childVariants}  className={`pb-2  lg:text-6xl text-4xl ${mode == "dark" ? "text-white":"text-black"} font-medium`}>
+                        <h2 className={`mb-4  lg:text-6xl text-4xl ${mode == "dark" ? "text-white" : "text-black"} font-medium`}>
                             Chitraksh Chavan
-                        </motion.h2>
-                        <motion.h2 variants={childVariants} className=' lg:text-5xl text-4xl font-til font-medium text-gray-400/80'>
+                        </h2>
+                        <h2 className=' lg:text-5xl text-2xl font-til text-center font-medium text-gray-400/80'>
                             Code, creativity, and coffee, that’s my daily stack
-                        </motion.h2>
-                        <motion.span variants={childVariants} className='lg:text-3xl text-xl tracking-tight py-5'>
+                        </h2>
+                        <span className={`lg:text-3xl text-xl ${mode == "dark" ? "text-gray-300" : "text-gray-400"} py-5`}>
                             I'm a {' '}
-                            <span className='text-white lg:text-3xl text-xl'>{text}</span>
+                            <span className={` ${mode == "dark" ? "text-white" : "text-black"} lg:text-3xl text-xl font-bold`}>{text}</span>
                             <Cursor />
-                        </motion.span>
+                        </span>
 
-                        <motion.p variants={childVariants} className="my-2 w-full py-2 text-base leading-relaxed tracking-tighter text-justify font-tit font-thin">
+                        <p className={`my-2 w-full  text-lg  ${mode == "dark" ? "text-gray-400/100" : "text-gray-900"} text-justify font-tit font-thin`}>
                             {HERO_CONTENT.split('MERN stack')[0]}{' '}
-                            <span className="text-cyan-400 font-semibold">MERN stack</span>{' '}
+                            <span className={` ${mode == "dark" ? "text-green-500" : "text-black"}       font-semibold`}>MERN stack</span>{' '}
                             {HERO_CONTENT.split('MERN stack')[1]}
-                        </motion.p>
+                        </p>
                         <br></br>
-                        <motion.p variants={childVariants} className='mb-4 w-full  text-base leading-relaxed tracking-tighter text-justify font-tit font-thin' >{ABOUT_TEXT}</motion.p>
+                        <p className={`mb-4 w-full  text-lg  ${mode == "dark" ? "text-gray-400/100" : "text-gray-900"}  text-justify font-tit font-thin`} >{ABOUT_TEXT}</p>
 
-                        <motion.a variants={childVariants} href="/chitraksh.pdf" rel='noopener noreferrer' download className=' border-solid border-2 rounded-full p-4  lg:text-sm text-xs text-white mb-10 hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 '>Download Resume</motion.a>
                     </div>
-                </motion.div>
+                    <div className='mt-4 flex items-center justify-between'>
+
+
+                        <a href="/chitraksh.pdf" rel='noopener noreferrer' className={`border-solid flex items-center  border-[1px] rounded-lg py-3 px-5 lg:text-sm text-xs gap-2 text-white  ${mode == "dark" ? "bg-zinc-800   border-zinc-500" : "text-black border-gray-800 "} font-tit font-medium `}>
+                            <h1>Download Resume</h1>
+                            <GoDownload className='text-lg' />
+                        </a>
+                        <a href="https://www.linkedin.com/in/chitraksh-chavan" rel='noopener noreferrer' className={` flex items-center   rounded-lg  lg:text-sm text-xs gap-2 ${mode == "dark" ? "text-white" : "text-black  "} font-tit font-bold `}>
+                            <h1>Let's Connect</h1>
+                            <FaLink className='text-lg' />
+                        </a>
+
+
+
+                    </div>
+                </div>
 
             </div>
         </div>

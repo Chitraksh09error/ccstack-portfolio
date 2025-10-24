@@ -53,8 +53,8 @@ export default function Navbar({ mode, setMode }) {
             <div className="flex items-center justify-between py-4 gap-6 lg:px-24">
 
               {/* Desktop Menu */}
-              <div className={`hidden md:flex items-center gap-4  font-medium ${mode == "dark" ? "text-gray-400/100" : "text-gray-500"}  transition-all duration-300 text-sm `}>
-                <div className="hidden md:flex items-center gap-4 font-medium text-gray-400/100 text-sm">
+              <div className={`hidden md:flex items-center gap-5  font-medium ${mode == "dark" ? "text-gray-400/100" : "text-gray-500"}  transition-all duration-300 text-sm `}>
+                <div className="hidden md:flex items-center gap-5 font-medium  text-sm">
                   {links.map(link => (
                     <Link
                       key={link.to}
@@ -74,7 +74,7 @@ export default function Navbar({ mode, setMode }) {
               {/* Mobile Menu Button */}
               <div className="flex md:hidden">
                 <Disclosure.Button
-                  className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500"
+                  className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 "
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
