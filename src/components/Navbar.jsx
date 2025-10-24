@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Disclosure, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import cctack from '../assets/stackwhite.png'
+import { MdMenuOpen } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
 import { Link } from 'react-scroll'
 import { RiGithubLine } from "react-icons/ri";
 import { RiDiscordLine } from "react-icons/ri";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
+import { FaCode } from "react-icons/fa6";
 
 export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,10 +49,15 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
           <div className=" flex justify-between items-center relative z-50 lg:px-20 md:px-10 px-5 font-tit">
 
             <div className='hidden md:block'>
-              <h1 className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl`}>chitraksh.dev</h1>
+
+              <div className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl flex items-center gap-2`}>
+              <h1 >chitraksh.dev</h1>
+              <FaCode/>
+
+              </div>
             </div>
 
-            <div className="flex items-center justify-between lg:py-4 py-2 lg:px-24">
+            <div className="flex items-center justify-between lg:py-4 md:py-3 py-2 lg:px-24">
 
               {/* Desktop Menu */}
               <div className={`hidden md:flex items-center  font-medium ${mode == "dark" ? "text-gray-400/100" : "text-gray-500"}  transition-all duration-300 text-sm `}>
@@ -66,21 +73,22 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
                         }`}
                     >
                       {link.label}
+                      
                     </Link>
                   ))}
                 </div>
               </div>
 
               {/* Mobile Menu Button */}
-              <div className="flex md:hidden">
+              <div className="flex md:hidden ">
                 <Disclosure.Button
-                  className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 " onClick={() => setMenuOpen(!menuOpen)}
+                  className={`inline-flex items-center justify-center rounded-md p-2 ${mode == "dark" ? "text-gray-400/100 " : "text-gray-600/90 "}`} onClick={() => setMenuOpen(!menuOpen)}
                 >
                   <span className="sr-only">Open main menu</span>
                   {menuOpen ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MdOutlineClose className="text-xl" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <MdMenuOpen className="text-xl" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -106,20 +114,23 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
           <Transition
             show={menuOpen}
             enter="transition-all duration-300 ease-out"
-            enterFrom="opacity-100 -translate-y-4 max-h-0"
+            enterFrom="opacity-40 -translate-y-4 max-h-0"
             enterTo="opacity-100 translate-y-0 max-h-96"
             leave="transition-all duration-300 ease-in"
             leaveFrom="opacity-100 translate-y-0 max-h-96"
             leaveTo="opacity-100 -translate-y-4 max-h-0"
           >
-            <Disclosure.Panel className="md:hidden bg-[#040404] overflow-hidden  z-50 border-b-[1px] border-b-zinc-600/50 rounded-b-xl ">
-              <div className="space-y-1 px-4 pb-4 ">
-                <div className=''>
+            <Disclosure.Panel className={`md:hidden  ${mode == "dark" ? "bg-[#040404]":"bg-white"} overflow-hidden  z-50 border-b-[1px] border-b-zinc-600/50 rounded-b-lg `}>
+              <div className="space-y-3 px-4 pb-4 ">
+                <div className={` ${mode == "dark" ? "text-white" : "text-gray-950"} font-tit text-lg px-3 flex items-center gap-2`  }>
 
-                <h1 className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl`}>chitraksh.dev</h1>
+                <h1 >chitraksh.dev </h1>
+                <FaCode/>
                 </div>
-                <div className=' p-3'>
+                <div className={` w-full border  ${mode == "dark"? "border-zinc-700/40":""}  border-`}></div>
+                <div className=' p-3 '>
 
+                  <h1 className={` text-xl font-medium ${mode == "dark" ? "text-white":"text-gray-950"} font-tit text-center py-4 `}>Components</h1>
 
                 {links.map(link => (
                   <Link
@@ -128,10 +139,11 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
                     smooth={true}
                     duration={500}
                     offset={-100}
-                    className={`block text-sm font-normal border px-5 py-2 font-tit mb-1 rounded-sm ${mode == "dark" ? "bg-[#050505] text-white hover:bg-zinc-700/20 border-zinc-900/80 hover:border-zinc-500/20":""}  transition-colors duration-300 cursor-pointer`}
+                    className={`flex items-center justify-between text-sm font-normal border px-5 py-2 font-tit mb-1 rounded-sm ${mode == "dark" ? "bg-[#050505] text-white hover:bg-zinc-700/20 border-zinc-900/80 hover:border-zinc-500/20":"bg-zinc-50/90 text-gray-950 border-gray-200/90 hover:bg-zinc-100 hover:border-gray-300/100"}   cursor-pointer`}
                     onClick={() => setMenuOpen(false)} // close menu on select
                   >
                     {link.label}
+                    <MdArrowOutward className={`  `}/>
                   </Link>
                 ))}
                 </div>

@@ -16,17 +16,13 @@ import canva from '../assets/Canva.png'
 import shad from '../assets/shadcn.png'
 import magic from '../assets/magic.png'
 import ace from '../assets/aceui.png'
-import { motion } from 'framer-motion';
 
 
 function Skills() {
     return (
         <div className='lg:mb-20 mt-44 mb-10 pt-2' id='skills'>
             <h2 className='  text-center lg:text-3xl text-xl  underline decoration-wavy decoration-2  decoration-cyan-400 mb-8 text-white font-ti underline-offset-8 font-semibold'>Skills</h2>
-            <motion.div 
-            initial={{y:100 , opacity : 0}}
-            whileInView ={{y:0 , opacity : 1}}
-            transition={ {duration : 1, delay : 0.5}}
+            <div 
             className='flex flex-wrap items-center justify-center lg:pt-12 lg:pb-12'>
                 <div className='flex flex-wrap items-center  justify-center w-full   gap-8 '>
                     <Marquee autoFill speed={25} pauseOnHover >
@@ -115,7 +111,7 @@ function Skills() {
                     </Marquee>
                 </div>
 
-            </motion.div>
+            </div>
         </div>
     )
 }

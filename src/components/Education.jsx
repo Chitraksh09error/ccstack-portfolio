@@ -2,17 +2,15 @@ import React from 'react'
 import ycce from '../assets/yccepng.png'
 import mohota from '../assets/mohota.png'
 import sanskar from '../assets/sanskar.png'
-import { motion } from 'framer-motion'
+
 
 function Education() {
   return (
     <div className='lg:mb-4  pb-20 rounded-3xl pt-2  ' id='edu'>
       <h2 className='  text-center lg:text-3xl text-xl underline decoration-wavy decoration-2  decoration-cyan-400 mb-8 text-white font-ti underline-offset-8 font-light'>EDUCATION</h2>
 
-      <motion.div  
-       initial={{x:100 , opacity : 0}}
-       whileInView ={{x:0 , opacity : 1}}
-       transition={ {duration : 1, delay : 1}}
+      <div  
+
       className='flex lg:justify-between justify-center gap-4 flex-wrap'>
 
 
@@ -58,7 +56,7 @@ function Education() {
         </div>
         
 
-      </motion.div>
+      </div>
     </div>
   )
 }

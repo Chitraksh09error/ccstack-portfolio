@@ -1,17 +1,14 @@
 import React from 'react'
 import cosmos from '../assets/cosmos.png'
 import rotaract from '../assets/rotaract.png'
-import { motion } from 'framer-motion'
+
 
 function Experience() {
   return (
     <div className=' pb-14 ' id='experience'>
       <h2 className='  text-center lg:text-3xl text-xl underline decoration-wavy decoration-2  decoration-cyan-400 mb-8 text-white font-ti underline-offset-8 font-light'>Experience</h2>
 
-      <motion.div
-      initial={{y:100 , opacity : 0}}
-      whileInView ={{y:0 , opacity : 1}}
-      transition={ {duration : 1, delay : 0.5}} 
+      <div
        className='w-full flex justify-evenly flex-wrap'>
 
 
@@ -45,7 +42,7 @@ function Experience() {
         </div>
 
 
-      </motion.div>
+      </div>
 
     </div>
   )

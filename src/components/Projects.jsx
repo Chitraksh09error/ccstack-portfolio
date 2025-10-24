@@ -1,9 +1,8 @@
 import React from 'react'
-
 import { FiTool } from "react-icons/fi";
 import { PROJECTS1 } from '../constants'
 import { FaGithub } from "react-icons/fa";
-import { motion } from 'framer-motion'; 
+
 
 function Projects() {
   return (
@@ -15,10 +14,7 @@ function Projects() {
         
 
         {PROJECTS1.map((pro) => (
-          <motion.div 
-          initial={{y:100 , opacity : 0}}
-                                  whileInView ={{y:0 , opacity : 1}}
-                                  transition={ {duration : 1, delay : 0.5}}
+          <div 
            key={pro.id} className='  w-96   '>
             <div className='w-full flex justify-center '>
 
@@ -36,7 +32,7 @@ function Projects() {
               </div>
               <p className='text-justify lg:text-sm text-xs'>{pro.description}</p>
             </div>
-          </motion.div>
+          </div>
         ))}
 
 

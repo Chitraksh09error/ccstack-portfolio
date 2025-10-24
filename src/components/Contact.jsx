@@ -40,10 +40,7 @@ function Contact() {
       <h2 className='  text-center lg:text-3xl text-xl underline decoration-wavy decoration-2  decoration-cyan-400 mb-8 text-white font-ti underline-offset-8 font-light'>CONTACT</h2>
 
       <div className='flex flex-wrap lg:flex-row'>
-        <motion.div  
-        initial={{x:-100 , opacity : 0}}
-        whileInView ={{x:0 , opacity : 1}}
-        transition={ {duration : 1, delay : 0.5}}
+        <div  
         className="w-full lg:w-1/2 flex justify-center ">
           <section className=" contact  p-6 w-full max-w-lg">
             <form className="space-y-4" onSubmit={onSubmit}>
@@ -81,12 +78,9 @@ function Contact() {
               </button>
             </form>
           </section>
-        </motion.div>
+        </div>
 
-        <motion.div 
-        initial={{x:100 , opacity : 0}}
-        whileInView ={{x:0 , opacity : 1}}
-        transition={ {duration : 1, delay : 0.5}}
+        <div 
         className=' w-full lg:w-1/2 '>
 
           <div className='flex justify-center lg:p-2 '>
@@ -124,7 +118,7 @@ function Contact() {
           </div>
 
 
-        </motion.div>
+        </div>
 
       </div>
       <div className=' h-10  text-xl font-tit text-white flex  justify-center items-center'>
