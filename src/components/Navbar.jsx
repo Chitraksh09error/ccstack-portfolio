@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Disclosure } from '@headlessui/react'
+import { Disclosure, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import cctack from '../assets/stackwhite.png'
 import { Link } from 'react-scroll'
@@ -46,7 +46,7 @@ export default function Navbar({ mode, setMode }) {
         <>
           <div className="mx-auto flex justify-between items-center   max-w-7xl px-4 sm:px-6 lg:px-8 font-tit">
 
-            <div>
+            <div className='hidden md:block'>
               <h1 className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl`}>chitraksh.dev</h1>
             </div>
 
@@ -97,28 +97,41 @@ export default function Navbar({ mode, setMode }) {
           </div>
 
           {/* Mobile Menu */}
-          <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 px-4 pb-4">
-              <Link to="hero" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
-                HOME
-              </Link>
-              <Link to="skills" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400 hover:text-white">
-                SKILLS
-              </Link>
-              <Link to="edu" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
-                EDUCATION
-              </Link>
-              <Link to="project" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
-                PROJECTS
-              </Link>
-              <Link to="experience" smooth={true} duration={500} offset={-100} className="block text-base font-medium  text-cyan-400  hover:text-white">
-                EXPERIENCE
-              </Link>
-              <Link to="contact" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
-                CONTACT
-              </Link>
-            </div>
-          </Disclosure.Panel>
+          <Transition
+            show={open}
+            enter="transition-all duration-500 ease-out"
+            enterFrom="max-h-0 opacity-20"
+            enterTo="max-h-96 opacity-100"
+            leave="transition-all duration-500 ease-in"
+            leaveFrom="max-h-96 opacity-100"
+            leaveTo="max-h-0 opacity-20"
+          >
+            <Disclosure.Panel className="md:hidden  overflow-hidden"> 
+              <div className="space-y-1 px-4 pb-4 ">
+
+                <h1 className={` ${mode == "dark" ? "text-white" : "text-gray-950"}  text-xl`}>chitraksh.dev</h1>
+
+                <Link to="hero" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
+                  HOME
+                </Link>
+                <Link to="skills" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400 hover:text-white">
+                  SKILLS
+                </Link>
+                <Link to="edu" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
+                  EDUCATION
+                </Link>
+                <Link to="project" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
+                  PROJECTS
+                </Link>
+                <Link to="experience" smooth={true} duration={500} offset={-100} className="block text-base font-medium  text-cyan-400  hover:text-white">
+                  EXPERIENCE
+                </Link>
+                <Link to="contact" smooth={true} duration={500} offset={-100} className="block text-base font-medium text-cyan-400  hover:text-white">
+                  CONTACT
+                </Link>
+              </div>
+            </Disclosure.Panel>
+          </Transition>
         </>
       )}
     </Disclosure>

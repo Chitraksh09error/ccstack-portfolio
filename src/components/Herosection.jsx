@@ -39,19 +39,19 @@ function Herosection({ mode, setMode }) {
                             <Cursor />
                         </span>
 
-                        <p className={`my-2 w-full  text-lg  ${mode == "dark" ? "text-gray-400/100" : "text-gray-900"} text-justify font-tit font-thin`}>
+                        <p className={`my-2 w-full  lg:text-lg  text-sm  ${mode == "dark" ? "text-gray-400/100" : "text-gray-900"} text-justify font-tit font-thin`}>
                             {HERO_CONTENT.split('MERN stack')[0]}{' '}
                             <span className={` ${mode == "dark" ? "text-green-500" : "text-black"}       font-semibold`}>MERN stack</span>{' '}
                             {HERO_CONTENT.split('MERN stack')[1]}
                         </p>
                         <br></br>
-                        <p className={`mb-4 w-full  text-lg  ${mode == "dark" ? "text-gray-400/100" : "text-gray-900"}  text-justify font-tit font-thin`} >{ABOUT_TEXT}</p>
+                        <p className={`mb-4 w-full  lg:text-lg text-sm  ${mode == "dark" ? "text-gray-400/100" : "text-gray-900"}  text-justify font-tit font-thin`} >{ABOUT_TEXT}</p>
 
                     </div>
                     <div className='mt-4 flex items-center justify-between'>
 
 
-                        <a href="/chitraksh.pdf" rel='noopener noreferrer' className={`border-solid flex items-center  border-[1px] rounded-lg py-3 px-5 lg:text-sm text-xs gap-2 text-white  ${mode == "dark" ? "bg-zinc-800   border-zinc-500" : "text-black border-gray-800 "} font-tit font-medium `}>
+                        <a href="/chitraksh.pdf" rel='noopener noreferrer' className={`border-solid flex items-center  border-[1px] rounded-lg py-3 px-5 lg:text-sm text-xs gap-2 text-white  ${mode == "dark" ? "bg-zinc-800 hover:bg-zinc-700 transtion-colors duration-200  border-zinc-500" : "text-black border-gray-800 "} font-tit font-medium `}>
                             <h1>Download Resume</h1>
                             <GoDownload className='text-lg' />
                         </a>
