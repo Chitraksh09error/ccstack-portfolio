@@ -27,10 +27,10 @@ function Herosection({ mode, setMode }) {
                     transition={{ duration: 1, delay: 0.5 }}
                     className='w-full '>
                     <div className='flex flex-col items-center lg:items-start mt-20 '>
-                        <h2 className={`mb-4  lg:text-6xl text-4xl ${mode == "dark" ? "text-white" : "text-black"} font-medium`}>
+                        <h2 className={`mb-4  lg:text-6xl lg:text-left md:text-left text-center text-4xl ${mode == "dark" ? "text-white" : "text-black"} font-medium`}>
                             Chitraksh Chavan
                         </h2>
-                        <h2 className=' lg:text-5xl text-2xl font-til text-center font-medium text-gray-400/80'>
+                        <h2 className=' lg:text-5xl text-2xl font-til lg:text-left md:text-left text-center font-medium text-gray-400/80'>
                             Code, creativity, and coffee, that’s my daily stack
                         </h2>
                         <span className={`lg:text-3xl text-xl ${mode == "dark" ? "text-gray-300" : "text-gray-400"} py-5`}>

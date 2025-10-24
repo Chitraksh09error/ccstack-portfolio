@@ -10,6 +10,7 @@ import Education from './components/Education'
 export default function App() {
 
   const [mode, setMode] = useState("dark");
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className={`overflow-x-hidden text-stone-300 ${mode == "dark" ? "bg-[#040404] " : "bg-white "} antialiased`}>
       {/* <div className='fixed inset-0 -z-10'>
@@ -19,7 +20,13 @@ export default function App() {
         </div>
       </div> */}
 
-        <Navbar mode={mode} setMode={setMode} />
+        <Navbar mode={mode} setMode={setMode} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        {menuOpen && (
+        <div
+          className="fixed inset-0 top-16 bg-black bg-opacity-60"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
       <div className='container mx-auto px-5 sm:px-10 md:px-1 lg:px-32 xl:px-32'>
         <Herosection  mode={mode} setMode={setMode} />
         <Skills/>
