@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 function Projects({ mode, setMode }) {
   return (
     <div className=' lg:mb-6 space-y-14 ' id='project'>
-      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-2xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
+      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
         Projects
       </h1>
       <h2 className={`  lg:text-justify md:text-left  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-2xl text-lg font-tit `}>
@@ -41,22 +41,22 @@ function Projects({ mode, setMode }) {
 
                 {
                   pro.gitLink === "none" ? (<></>):
-                  (<a href={pro.gitLink} className={`flex gap-2 items-center font-tit ${mode == "dark" ? "text-zinc-400/90 hover:text-zinc-400/100":""}  `} >Repo  <FaGithub className='  lg:text-xl text-lg ' /></a>)
+                  (<a href={pro.gitLink} className={`flex gap-2 items-center font-tit ${mode == "dark" ? "text-zinc-400/90 hover:text-zinc-400/100":"text-zinc-700/90 hover:text-gray-950"}  `} >Repo  <FaGithub className='  lg:text-xl text-lg ' /></a>)
                 }
                 
               </div>
 
 
 
-              <div className='flex gap-3 items-center justify-left '>
+              <div className={`flex gap-3 items-center  ${mode == "dark" ? "text-gray-400/90" : "text-gray-700"}  justify-left `}>
                 <div>
 
-                <FiTool className='lg:text-xl text-sm text-cyan-600' />
+                <FiTool className='lg:text-xl text-sm ' />
                 </div>
-                <h5 className='text-cyan-400 text-xs  font-tit '>{pro.technologies}</h5>
+                <h5 className='0 text-xs font-medium font-tit '>{pro.technologies}</h5>
 
               </div>
-              <p className='text-justify font-tit lg:text-sm text-xs'>{pro.description}</p>
+              <p className={`text-justify font-tit lg:text-sm  ${mode == "dark"? "text-white":"text-black"}   text-xs`}>{pro.description}</p>
             </div>
           </div>
         ))}

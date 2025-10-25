@@ -50,7 +50,7 @@ function Skills({ mode, setMode }) {
 
     return (
         <div className='lg:mb-20 mt-44 mb-10 pt-2  space-y-10 ' id='skills'>
-            <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-2xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
+            <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
                 Tech Arsenal
             </h1>
             <h2 className={`  lg:text-justify md:text-left  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-2xl text-lg font-tit `}>
