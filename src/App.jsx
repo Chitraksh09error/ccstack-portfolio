@@ -27,11 +27,11 @@ export default function App() {
           onClick={() => setMenuOpen(false)}
         />
       )}
-      <div className='container mx-auto px-5 sm:px-10 md:px-1 lg:px-32 xl:px-32'>
+      <div className='container mx-auto lg:space-y-52 md:space-y-48 space-y-40 px-5 sm:px-10 md:px-1 lg:px-32 xl:px-32'>
         <Herosection  mode={mode} setMode={setMode} />
         <Skills  mode={mode} setMode={setMode}  />
+        <Projects mode={mode} setMode={setMode} />
         <Education/>
-        <Projects/>
         <Experience/>
         <Contact/>
       </div>

@@ -53,7 +53,7 @@ function Skills({ mode, setMode }) {
             <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-2xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
                 Tech Arsenal
             </h1>
-            <h2 className={`  lg:text-justify md:text-left  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-3xl text-xl font-tit `}>
+            <h2 className={`  lg:text-justify md:text-left  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-2xl text-lg font-tit `}>
                 I specialize in crafting <span className={` ${mode == "dark" ? "text-white" : "text-black"}
                     `}> responsive  </span> and <span className={` ${mode == "dark" ? "text-white" : "text-black"}
                     `}>dynamic </span>  web applications using modern technologies. From front-end design to back-end logic, I focus on creating <span className={` ${mode == "dark" ? "text-white" : "text-black"}

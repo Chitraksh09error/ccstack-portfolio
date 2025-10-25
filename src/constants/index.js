@@ -25,7 +25,7 @@ export const PROJECTS1 = [
     description:
       "A modern MERN stack e-commerce platform offering the latest Air Jordans and a curated selection of pre-owned sneakers. It features a seamless shopping experience, secure authentication, and a dynamic product gallery",
     technologies: ["Next.js", " / TailwindCSS", " / Shadcnui"," / Magic UI"," / Aceternity UI" ," / Supabase"," / Framer-Motion"],
-    gitLink : "iki"
+    gitLink : "https://github.com/Chitraksh09error/AirKicks"
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const PROJECTS1 = [
     description:
       "A group project providing event details, schedules, and organizer contacts for YASH 25.0. Designed for easy navigation, real-time updates, and seamless event coordination.",
     technologies: ["React.js", " / TailwindCSS", " / Framer-Motion"," / CSS"],
-    gitLink : "iki"
+    gitLink : "https://github.com/Chitraksh09error/YASH-25.0"
   },
   {
     id: 3,
@@ -43,16 +43,16 @@ export const PROJECTS1 = [
     description:
       "A personal portfolio website showcasing my skills, experience, and projects in web development and design. It includes an interactive project gallery, details about my expertise in MERN stack and other technologies, and a contact section for collaboration or inquiries.",
     technologies: ["React.js", " / TailwindCSS", " / CSS"," / Framer-Motion"],
-    gitLink : "iki"
+    gitLink : "https://github.com/Chitraksh09error/ccstack-portfolio"
   },
   {
     id: 4,
-    title: "MERN Authentication",
+    title: "Authentication",
     image: pro5,
     description:
       "A secure and scalable authentication system built with the MERN stack, featuring user registration, login, and password management. It includes functionalities like email verification, OTP-based authentication, password reset, and JWT-based session handling for enhanced security.",
     technologies: ["MERN STACK", " / TailwindCSS"],
-    gitLink : "iki"
+    gitLink : "none"
   },
   {
     id: 5,
@@ -70,6 +70,7 @@ export const PROJECTS1 = [
     description:
     "This website helps farmers grow crops based on their needs, offering tailored recommendations to boost productivity. It was developed during the SMACKATHON at YCCE College as part of TechFest.",
     technologies: ["Python", " / HTML", " / Bootstrap"," / JavaScript"," / CSS"],
+    gitLink : "none"
   }
 ];
 

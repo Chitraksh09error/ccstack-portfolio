@@ -34,8 +34,8 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
   const links = [
     { to: "hero", label: "Home" },
     { to: "skills", label: "Skills" },
-    { to: "edu", label: "Education" },
     { to: "project", label: "Projects" },
+    { to: "edu", label: "Education" },
     { to: "experience", label: "Experience" },
     { to: "contact", label: "Contact" },
   ];
