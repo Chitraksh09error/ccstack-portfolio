@@ -1,6 +1,8 @@
 import React from 'react'
 // import con from '../assets/contact.png'
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
+import { TbBrandLeetcode } from "react-icons/tb";
 import { RiDiscordLine } from "react-icons/ri";
 import Swal from 'sweetalert2'
 function Contact({ mode, setMode }) {
@@ -113,11 +115,16 @@ function Contact({ mode, setMode }) {
                     <RiDiscordLine className='lg:text-2xl  text-lg  cursor-pointer' />
                   </a>
                 </div>
+                <div className={`border-solid border rounded-xl ${mode == "dark" ? "text-zinc-200 border-zinc-400/40 hover:bg-[#333333]  hover:border-[#333333] " : "text-zinc-700/70 border-zinc-700/40 hover:bg-zinc-300/30 hover:border-zinc-100/90"} flex justify-center items-center lg:h-10 lg:w-10 h-8 w-8  cursor-pointer   `}  >
+                  <a href="https://leetcode.com/u/chitrakshAI09">
+                    <TbBrandLeetcode className='lg:text-2xl  text-lg  cursor-pointer' />
+                  </a>
+                </div>
               </div  >
               <div className='  w-full p-7'>
-                <h1 className=' lg:text-xl text-lg font-tit text-cyan-400 '>Get in Touch</h1>
+                <h1 className={`lg:text-xl text-lg font-tit font-semibold ${mode == "dark"? "text-cyan-400":"text-black"} `}>Get in Touch</h1>
                 <br />
-                <p className='text-white lg:text-base text-sm text-justify font-tit font-light'>Have a question or just want to connect? I'd ❤️ to hear from you! Feel free to reach out through any of the channels above or send me message through above form and let's start a conversation.</p>
+                <p className={`${mode == "dark" ? "text-gray-300":"text-gray-900"} lg:text-base text-sm text-justify font-tit font-medium`}>Have a question or just want to connect? I'd ❤️ to hear from you! Feel free to reach out through any of the channels above or send me message through above form and let's start a conversation.</p>
               </div>
 
 
@@ -128,7 +135,7 @@ function Contact({ mode, setMode }) {
         </div>
 
       </div>
-      <div className=' h-10  text-xl font-tit text-white flex  justify-center items-center'>
+      <div className={` h-10  text-xl font-tit ${mode == "dark" ? "text-white":"text-black"} flex  justify-center items-center`}>
         <h2 className='text-lg' >Developed By Chitraksh</h2>
       </div>
 
