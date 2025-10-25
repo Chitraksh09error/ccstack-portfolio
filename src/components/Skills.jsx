@@ -20,7 +20,6 @@ function Skills({ mode, setMode }) {
         { name: "CSS", icon: <StackIcon name="css3" className='lg:w-5 w-4' /> },
         { name: "Javascript", icon: <StackIcon name="js" className='lg:w-5 w-4' /> },
         { name: "C", img: c },
-        { name: "Bootstrap", icon: <StackIcon name="bootstrap4" className='lg:w-5 w-4' /> },
         { name: "Vercel", icon: <StackIcon name="vercel" variant={mode == "dark" ? 'dark' : 'light'} className='lg:w-5 w-4' /> },
         { name: "Tailwind", icon: <StackIcon name="tailwindcss" className='lg:w-5 w-4' /> },
         { name: "Canva", icon: <StackIcon name="canva" className='lg:w-5 w-4' /> },
@@ -28,7 +27,6 @@ function Skills({ mode, setMode }) {
         { name: "Render", icon: <StackIcon name="render" variant={mode == "dark" ? 'dark' : 'light'} className='lg:w-5 w-4' /> },
         { name: "Magic UI", img: magic },
         { name: "Aceternity UI", img: ace },
-        { name: "VsCode", icon: <StackIcon name="vscode" className='lg:w-5 w-4' /> },
         { name: "GitHub", icon: <StackIcon name="github" variant={mode == "dark" ? 'dark' : 'light'} className='lg:w-5 w-4' /> },
         { name: "Git", icon: <StackIcon name="git" className='lg:w-5 w-4' /> },
         { name: "Cloudinary", icon: <StackIcon name="cloudinary" className='lg:w-5 w-4' /> },
@@ -36,7 +34,6 @@ function Skills({ mode, setMode }) {
         { name: "Replit", icon: <StackIcon name="replit" className='lg:w-5 w-4' /> },
         { name: "Perplexity AI", icon: <StackIcon name="perplexity" className='lg:w-5 w-4' /> },
         { name: "Spring", icon: <StackIcon name="spring" className='lg:w-5 w-4' /> },
-        { name: "V0", icon: <StackIcon name="v0" variant={mode == "dark" ? 'dark' : 'light'} className='lg:w-5 w-4' /> },
     ];
 
     return (
