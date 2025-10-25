@@ -14,32 +14,38 @@ import shad from '../assets/shadcn.png'
 import magic from '../assets/magic.png'
 import ace from '../assets/aceui.png'
 
-function Skills() {
+function Skills({mode, setMode}) {
 
     const skillsData = [
-        { name: "React.js", icon: <StackIcon name="react" className='lg:w-6 w-4' /> },
-        { name: "Node.js", icon: <StackIcon name="nodejs" className='lg:w-6 w-4' /> },
-        { name: "Next.js", icon: <StackIcon name="nextjs2" className='lg:w-6 w-4' /> },
-        { name: "Express", icon: <StackIcon name="expressjs" className='lg:w-6 w-4 ' variant='dark' /> },
-        { name: "MongoDB", icon: <StackIcon name="mongodb" className='lg:w-6 w-4' /> },
+        { name: "React.js", icon: <StackIcon name="react" className='lg:w-5 w-4' /> },
+        { name: "Node.js", icon: <StackIcon name="nodejs" className='lg:w-5 w-4' /> },
+        { name: "Next.js", icon: <StackIcon name="nextjs2" className='lg:w-5 w-4' /> },
+        { name: "Express", icon: <StackIcon name="expressjs" className='lg:w-6 w-4 '   variant={mode == "dark" ? 'dark':'light' } /> },
+        { name: "MongoDB", icon: <StackIcon name="mongodb" className='lg:w-5 w-4' /> },
         { name: "Python", img: python },
-        { name: "Java", icon: <StackIcon name="java" className='lg:w-6 w-4' /> },
-        { name: "SQL", icon: <StackIcon name="mysql" className='lg:w-6 w-4' /> },
-        { name: "HTML", icon: <StackIcon name="html5" className='lg:w-6 w-4' /> },
-        { name: "CSS", icon: <StackIcon name="css3" className='lg:w-6 w-4' /> },
-        { name: "Javascript", icon: <StackIcon name="js" className='lg:w-6 w-4' /> },
+        { name: "Java", icon: <StackIcon name="java" className='lg:w-5 w-4' /> },
+        { name: "SQL", icon: <StackIcon name="mysql"  className='lg:w-5 w-4' /> },
+        { name: "HTML", icon: <StackIcon name="html5" className='lg:w-5 w-4' /> },
+        { name: "CSS", icon: <StackIcon name="css3" className='lg:w-5 w-4' /> },
+        { name: "Javascript", icon: <StackIcon name="js" className='lg:w-5 w-4' /> },
         { name: "C", img: c },
-        { name: "Bootstrap", icon: <StackIcon name="bootstrap4" className='lg:w-6 w-4' /> },
-        {name: "Vercel", icon: <StackIcon name="vercel" className='lg:w-6 w-4' />},
-        { name: "Tailwind", icon: <StackIcon name="tailwindcss" className='lg:w-6 w-4' /> },
-        { name: "Canva", icon: <StackIcon name="canva" className='lg:w-6 w-4' /> },
-        { name: "Shadcn/ui", icon: <StackIcon name="shadcnui" className='lg:w-6 w-4' /> },
-        {name: "Render", icon: <StackIcon name="render" className='lg:w-6 w-4' />},
+        { name: "Bootstrap", icon: <StackIcon name="bootstrap4" className='lg:w-5 w-4' /> },
+        {name: "Vercel", icon: <StackIcon name="vercel"  variant={mode == "dark" ? 'dark':'light' } className='lg:w-5 w-4' />},
+        { name: "Tailwind", icon: <StackIcon name="tailwindcss" className='lg:w-5 w-4' /> },
+        { name: "Canva", icon: <StackIcon name="canva" className='lg:w-5 w-4' /> },
+        { name: "Shadcn/ui", icon: <StackIcon name="shadcnui"  variant={mode == "dark" ? 'dark':'light' } className='lg:w-5 w-4' /> },
+        {name: "Render", icon: <StackIcon name="render"  variant={mode == "dark" ? 'dark':'light' } className='lg:w-5 w-4' />},
         { name: "Magic UI", img: magic },
         { name: "Aceternity UI", img: ace },
-        {name : "VsCode", icon: <StackIcon name="vscode" className='lg:w-6 w-4' />},
-        {name : "GitHub", icon: <StackIcon name="github" variant='dark' className='lg:w-6 w-4' />},
-        {name : "git", icon: <StackIcon name="git" className='lg:w-6 w-4' />},
+        {name : "VsCode", icon: <StackIcon name="vscode" className='lg:w-5 w-4' />},
+        {name : "GitHub", icon: <StackIcon name="github"  variant={mode == "dark" ? 'dark':'light' } className='lg:w-5 w-4' />},
+        {name : "Git", icon: <StackIcon name="git" className='lg:w-5 w-4' />},
+        {name : "Cloudinary", icon: <StackIcon name="cloudinary" className='lg:w-5 w-4' />},
+        {name:"Postman", icon:<StackIcon name="postman" className='lg:w-5 w-4' />},
+        {name: "Replit", icon:<StackIcon name="replit" className='lg:w-5 w-4' />},
+        {name: "Perplexity AI", icon:<StackIcon name="perplexity" className='lg:w-5 w-4' />},
+        {name: "Spring", icon:<StackIcon name="spring" className='lg:w-5 w-4' />},
+        {name : "V0", icon: <StackIcon name="v0"  variant={mode == "dark" ? 'dark':'light' } className='lg:w-5 w-4' />},
     ];
 
     return (
@@ -52,12 +58,15 @@ function Skills() {
                 {skillsData.map((skill, index) => (
                     <div
                         key={index}
-                        className={`rounded-3xl bg-zinc-900 flex items-center space-x-3 lg:h-12 h-9 px-4 text-white text-sm lg:text-base transition-transform duration-300 hover:scale-105 hover:bg-zinc-800 font-tit  `}
+                        className={`rounded-3xl border  ${mode == "dark"? "bg-zinc-800/100  border-zinc-300/30 text-white ":"bg-zinc-100/90 text-black border-zinc-300 "}  flex items-center space-x-3 lg:h-12 h-9 px-4  text-sm lg:text-base transition-transform duration-300 hover:scale-105 font-tit  `}
                     >
                         {skill.icon ? (
-                            <div className='text-2xl lg:text-4xl'>{skill.icon}</div>
+                            <>
+                            
+                            {skill.icon}
+                            </>
                         ) : (
-                            <img src={skill.img} alt={skill.name} className='lg:w-7 w-5 mr-1' />
+                            <img src={skill.img} alt={skill.name} className='lg:w-5 w-4 mr-1' />
                         )}
                         <span>{skill.name}</span>
                     </div>

@@ -96,11 +96,18 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
 
             <div className={`flex gap-2 items-center  ${mode == "dark" ? "text-gray-400/100 " : "text-gray-600/90 "}      `}>
               <div className='p-2'>
+                <a href="https://github.com/Chitraksh09error">
+
                 < RiGithubLine className='text-xl   cursor-pointer' />
+                </a>
 
               </div>
               <div className='p-2'>
+
+                <a href="https://discord.com/channels/1147115423339384854">
+
                 <RiDiscordLine className='text-xl   cursor-pointer' />
+                </a>
 
               </div>
               <div onClick={changeMode} className={`text-center cursor-pointer p-2 rounded-lg bg-transparent ${mode == "dark" ? " text-gray-400/100   hover:bg-gray-600/40  " : " text-gray-600/90 hover:bg-gray-200/100"} transition-all `}>

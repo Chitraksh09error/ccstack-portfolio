@@ -29,7 +29,7 @@ export default function App() {
       )}
       <div className='container mx-auto px-5 sm:px-10 md:px-1 lg:px-32 xl:px-32'>
         <Herosection  mode={mode} setMode={setMode} />
-        <Skills/>
+        <Skills  mode={mode} setMode={setMode}  />
         <Education/>
         <Projects/>
         <Experience/>
