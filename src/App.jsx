@@ -33,7 +33,7 @@ export default function App() {
         <Projects mode={mode} setMode={setMode} />
         <Experience mode={mode} setMode={setMode} />
         <Education mode={mode} setMode={setMode} />
-        <Contact/>
+        <Contact mode={mode} setMode={setMode} />
       </div>
 
     </div>
