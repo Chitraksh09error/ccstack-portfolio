@@ -1,16 +1,7 @@
 import React from 'react'
 import StackIcon from "tech-stack-icons";
 import python from '../assets/python.png'
-import java from '../assets/java.png'
-import sql from '../assets/mysql.png'
-import html from '../assets/html.png'
-import css from '../assets/css-3.png'
-import js from '../assets/js.png'
 import c from '../assets/C.png'
-import boot from '../assets/Boot.png'
-import tail from '../assets/Tail.png'
-import canva from '../assets/Canva.png'
-import shad from '../assets/shadcn.png'
 import magic from '../assets/magic.png'
 import ace from '../assets/aceui.png'
 

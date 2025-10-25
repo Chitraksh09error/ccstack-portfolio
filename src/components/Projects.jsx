@@ -10,7 +10,7 @@ function Projects({ mode, setMode }) {
       <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
         Projects
       </h1>
-      <h2 className={`  lg:text-justify md:text-left  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-2xl text-lg font-tit `}>
+      <h2 className={`  lg:text-justify md:text-justify  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-2xl text-lg font-tit `}>
         These projects are carefully crafted to deliver a highly <span className={` ${mode == "dark" ? "text-white" : "text-black"}
                     `}>responsive</span> experience across all devices.
         Each one is built to provide a truly <span className={` ${mode == "dark" ? "text-white" : "text-black"}

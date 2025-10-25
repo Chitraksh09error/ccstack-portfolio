@@ -4,7 +4,7 @@ import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
 import pro2 from '../assets/scipy.png'
-import pro3 from '../assets/kisan.png'
+import pro3 from '../assets/chat.png'
 import pro4 from '../assets/port.png'
 import pro5 from '../assets/mern.png'
 import pro6 from '../assets/airkicks.png'
@@ -29,6 +29,15 @@ export const PROJECTS1 = [
   },
   {
     id: 2,
+    title: "Chat App",
+    image: pro3,
+    description:
+    "A MERN stack chat app enabling users to send and receive messages and images instantly. It provides a seamless, interactive, and real-time communication experience between multiple users.",
+    technologies: ["MERN STACK", " / Socket.io", " / TailwindCSS"," / Cloudinary"],
+    gitLink : "https://github.com/Chitraksh09error/ChatApp"
+  },
+  {
+    id: 3,
     title: "YASH 25.0",
     image: pro7,
     description:
@@ -37,7 +46,7 @@ export const PROJECTS1 = [
     gitLink : "https://github.com/Chitraksh09error/YASH-25.0"
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio",
     image: pro4,
     description:
@@ -46,7 +55,7 @@ export const PROJECTS1 = [
     gitLink : "https://github.com/Chitraksh09error/ccstack-portfolio"
   },
   {
-    id: 4,
+    id: 5,
     title: "Authentication",
     image: pro5,
     description:
@@ -55,7 +64,7 @@ export const PROJECTS1 = [
     gitLink : "none"
   },
   {
-    id: 5,
+    id: 6,
     title: "Billing System",
     image: pro2,
     description:
@@ -63,15 +72,6 @@ export const PROJECTS1 = [
     technologies: ["Python", " / TKinter", " / SQLite"],
     gitLink : "https://github.com/Chitraksh09error/Scipy_Dmart"
   },
-  {
-    id: 6,
-    title: "KISAN",
-    image: pro3,
-    description:
-    "This website helps farmers grow crops based on their needs, offering tailored recommendations to boost productivity. It was developed during the SMACKATHON at YCCE College as part of TechFest.",
-    technologies: ["Python", " / HTML", " / Bootstrap"," / JavaScript"," / CSS"],
-    gitLink : "none"
-  }
 ];
 
 

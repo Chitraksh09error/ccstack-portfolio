@@ -31,8 +31,8 @@ export default function App() {
         <Herosection  mode={mode} setMode={setMode} />
         <Skills  mode={mode} setMode={setMode}  />
         <Projects mode={mode} setMode={setMode} />
-        <Education/>
-        <Experience/>
+        <Experience mode={mode} setMode={setMode} />
+        <Education mode={mode} setMode={setMode} />
         <Contact/>
       </div>
 

@@ -35,8 +35,8 @@ export default function Navbar({ mode, setMode, menuOpen, setMenuOpen }) {
     { to: "hero", label: "Home" },
     { to: "skills", label: "Skills" },
     { to: "project", label: "Projects" },
-    { to: "edu", label: "Education" },
     { to: "experience", label: "Experience" },
+    { to: "edu", label: "Education" },
     { to: "contact", label: "Contact" },
   ];
 

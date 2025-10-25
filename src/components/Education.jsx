@@ -4,14 +4,28 @@ import mohota from '../assets/mohota.png'
 import sanskar from '../assets/sanskar.png'
 
 
-function Education() {
+function Education({mode, setMode}) {
   return (
-    <div className='lg:mb-4  pb-20 rounded-3xl pt-2  ' id='edu'>
-      <h2 className='  text-center lg:text-3xl text-xl underline decoration-wavy decoration-2  decoration-cyan-400 mb-8 text-white font-ti underline-offset-8 font-light'>EDUCATION</h2>
+    <div className='space-y-14 rounded-3xl   ' id='edu'>
+      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
+        Education
+      </h1>
 
-      <div  
+      <h2 className={`lg:text-justify md:text-left text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium lg:text-2xl text-lg font-tit`}>
+        My educational journey began with a strong foundation in
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> academics </span> during my
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> 10th </span> and
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> 12th </span> grades, where I developed a passion for
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> technology </span> and 
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> logical </span> thinking. Pursuing a degree in
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> Computer Science and Engineering </span> further enhanced my
+        <span className={`${mode == "dark" ? "text-white" : "text-black"}`}> technical </span> expertise and problem-solving mindset.
+      </h2>
 
-      className='flex lg:justify-between justify-center gap-4 flex-wrap'>
+
+      <div
+
+        className='flex lg:justify-between justify-center gap-4 flex-wrap'>
 
 
         <div className='w-80 h-40 flex justify-start items-center mt-3 bg-zinc-950 rounded-2xl p-3 lg:pl-9'>
@@ -54,7 +68,7 @@ function Education() {
 
           </div>
         </div>
-        
+
 
       </div>
     </div>
