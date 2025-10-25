@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Education from './components/Education'
+import Footer from './components/Footer'
 
 export default function App() {
 
@@ -35,6 +36,8 @@ export default function App() {
         <Education mode={mode} setMode={setMode} />
         <Contact mode={mode} setMode={setMode} />
       </div>
+
+      <Footer  mode={mode} setMode={setMode} />
 
     </div>
   )

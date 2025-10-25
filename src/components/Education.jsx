@@ -36,7 +36,7 @@ function Education({mode, setMode}) {
 
   return (
     <div className='space-y-14 rounded-3xl   ' id='edu'>
-      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
+      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-2xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
         Education
       </h1>
 

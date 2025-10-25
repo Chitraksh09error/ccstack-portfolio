@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 function Projects({ mode, setMode }) {
   return (
     <div className=' lg:mb-6 space-y-14 ' id='project'>
-      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
+      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-2xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
         Projects
       </h1>
       <h2 className={`  lg:text-justify md:text-justify  text-center ${mode == "dark" ? "text-gray-400/70" : "text-gray-500/80"} font-medium  lg:text-2xl text-lg font-tit `}>

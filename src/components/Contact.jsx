@@ -37,7 +37,7 @@ function Contact({ mode, setMode }) {
 
   return (
     <div className=' space-y-14 ' id='contact'>
-      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-3xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
+      <h1 className={`lg:text-left md:text-left   text-center lg:text-4xl text-2xl ${mode == "dark" ? "text-white" : "text-black"}  font-tit font-bold`}>
         Contact
       </h1>
 
@@ -134,9 +134,6 @@ function Contact({ mode, setMode }) {
 
         </div>
 
-      </div>
-      <div className={` h-10  text-xl font-tit ${mode == "dark" ? "text-white":"text-black"} flex  justify-center items-center`}>
-        <h2 className='text-lg' >Developed By Chitraksh</h2>
       </div>
 
     </div>
