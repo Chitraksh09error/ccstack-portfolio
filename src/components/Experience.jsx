@@ -19,7 +19,7 @@ function Experience({ mode, setMode }) {
   {
     id: 2,
     image: GDG,
-    role: "Designer",
+    role: "Community Manager",
     company: "GDG Cloud Nagpur",
     duration: "Apr 2025 - Present . 7 mos",
     tech: "Canva"
